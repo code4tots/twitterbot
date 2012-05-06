@@ -1,3 +1,16 @@
 5.6.2012
-A simple twitterbot written in Python.
+A simple twitterbot written in Python using tweepy. (Was originally going to use python-twitter, but it lacked built-in Oauth support)
+
+loginProperties.py
+	This is a valid properties file (can be parsed by a Java Properties class).
+	Since Python doesn't have an equivalent parser, and since it was simple enough to be valid Python code, I decided to simply use it as a Python file.
+	It is imported only by getApi.py
+
+	For security purposes, this file is only valid in the version in my Dropbox folder (~/Dropbox/twitterbot/).
+
+getApi.py
+	Uses the login information from loginProperties.py to get an authenticated tweepy API.
+	sample usage:
+	import getApi
+	api = getApi.getApi()
 
