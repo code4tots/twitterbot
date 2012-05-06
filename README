@@ -1,6 +1,8 @@
 5.6.2012
 A simple twitterbot written in Python using tweepy. (Was originally going to use python-twitter, but it lacked built-in Oauth support)
 
+I followed roughly the instructions on this link: http://talkfast.org/2010/05/31/twitter-from-the-command-line-in-python-using-oauth
+
 loginProperties.py
 	This is a valid properties file (can be parsed by a Java Properties class).
 	Since Python doesn't have an equivalent parser, and since it was simple enough to be valid Python code, I decided to simply use it as a Python file.
